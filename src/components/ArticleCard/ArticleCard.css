@@ -1,0 +1,47 @@
+.article-card {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 0px;
+  width: 992;
+  height: 972;
+  margin: 0 0 0 70px;
+  justify-content: space-between;
+gap: 20px;
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
+.article-card .article-card-header time {
+  font-size: 14px;
+  border-left: 4px solid;
+  padding-left: 8px;
+}
+
+.article-card .article-card-header h2 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+.article-card p {
+  color: rgba(82, 82, 91, 1);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  text-align: justify;
+}
+.article-card a {
+  font-size: 14px;
+  font-weight: bold;
+  text-underline: none;
+  text-decoration: none;
+  color:#14B8A6;
+}
+
+.article-card a:hover {
+  text-decoration: underline;
+}

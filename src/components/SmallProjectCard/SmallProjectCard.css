@@ -1,0 +1,86 @@
+.imageIcon {
+  width: 24px;
+  height: 24px;
+   padding-right: 8px;
+   img-color: #gray;
+   align-item-vertical: bottom;
+}
+.sproject-card {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  border-radius: none;
+  border: none;
+  border-style: none;
+  border-shadow: none;
+  width: 33%;
+  max-width: 300px;
+  row-gap: 12px;
+  width: 420px;
+  height: 384;
+  gap: 24px;
+  margin-left: 100px;
+}
+
+.sproject-card-logo {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  border-radius: 9999px;
+  padding: 2px;
+}
+
+.sproject-card h2 {
+  width: 672;
+  height: 112;
+  margin-top: 8px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.01%;
+
+}
+
+.sproject-card p {
+  color: rgba(82, 82, 91, 1);
+  width: 672;
+  height: 70;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: justify;
+  margin-top: 0;
+  padding-top: 0;
+
+}
+
+.sproject-card a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000;
+}
+
+.sproject-card a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.sproject-card a:hover {
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px solid #000;
+}

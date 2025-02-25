@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 1280px;
+  max-width: 1280px;
+  justify-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid #e9ecef;
+  margin-top: 40px;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.footer ul a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer ul a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.footer p {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+

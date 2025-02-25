@@ -1,3 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import tailwindcss;
+:root {
+  /* Light mode */
+  --light-bg: white;
+
+  /* Dark mode */
+  --dark-bg: #333;
+}
+
+body {
+  background-color: var(--light-bg);
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+}
+
+
+.column {
+  float: left;
+  width: 45%;
+}
+.column2 {
+  float: left;
+  width: 30%;
+}
+.column3 {
+  float: left;
+  width: 30%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

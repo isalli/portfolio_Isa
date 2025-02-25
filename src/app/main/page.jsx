@@ -1,28 +1,17 @@
-import Header from "@/components/Header/Header";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import ArticleCard from "@/components/ArticleCard/ArticleCard";
 import SignupWidget from "@/components/SignupWidget/SignupWidget";
 import WorkWidget from "@/components/WorkWidget/WorkWidget";
 import SkillsWidget from "@/components/SkillsWidget/SkillsWidget";
 import Footer from "@/components/Footer/Footer";
-import './globals.css';
 
-export const metadata = {
-  title: "Portfolio - Home",
-  description: "Home page of my portfolio.",
-};
-const options = [
-  { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
-  { path: "/projects", label: "Projects" },
-  { path: "/uses", label: "Uses" },
-];
+
 const cardData = {
   name: "Isabel, software engineer",
   logo: "/Isabel_portfolio.jpg",
   content:
     "Working with the Product Team to discover strong solutions for a digital product to support hourly-based external recruiting services. Our platform is built on top of firebase technologies, including Firestore, Cloud Functions (NodeJS + Typescript), Sveltekit, and Typesense.",
-  link: ["https://www.linkedin.com/in/isabel-cordova-noriega", "https://www.ensign.edu/" , "https://github.com/"],
+  link: "https://www.ensign.edu/",
 };
 const articles = [
   {
@@ -45,36 +34,42 @@ const workData = {
   content: "My work experience.",
   experiences: [
     {
-      logo: "/Ensign_College.png",
-      organization: "Ensign College",
+      logo: "/slack.png",
+      organization: "Slack",
       jobTitle: "Software Engineer",
       startYear: 2016,
       endYear: null,
     },
     {
-      logo: "/itau.png",
-      organization: "Itau Unibanco",
+      logo: "/spotify.png",
+      organization: "Spotify",
       jobTitle: "Software Engineer",
       startYear: 2014,
       endYear: 2015,
     },
     {
-      logo: "/pagbank.png",
-      organization: "PagBank",
+      logo: "/audible.png",
+      organization: "Audible",
       jobTitle: "Software Engineer",
       startYear: 2012,
       endYear: 2013,
     },
-
+    {
+      logo: "/microsoft.png",
+      organization: "Microsoft",
+      jobTitle: "Software Engineer",
+      startYear: 2010,
+      endYear: 2011,
+    },
   ],
 };
 const skillsData = {title:'Skills', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.',
   skills: [
-  { name: 'HTML', proficiency: 60, icon: 'html.png' },
-  { name: 'CSS', proficiency: 50, icon: 'css-icon.png' },
-  { name: 'JavaScript', proficiency: 75, icon: 'icons8-javascript-48.png' },
+  { name: 'HTML', proficiency: 60, icon: 'html5.png' },
+  { name: 'CSS', proficiency: 50, icon: 'css3.png' },
+  { name: 'JavaScript', proficiency: 75, icon: 'javascript.png' },
 ]} ;
-export const links = [
+const links = [
   {
     title: 'Home',
     url: '/home',
@@ -93,27 +88,25 @@ export const links = [
   },
 ];
 
-export default function Home() {
+
+
+export default async function Home() {
   return (
     <div>
-      <Header options={options}/>
-      <main>
-        <ProjectCard {...cardData} />
-        <div className="row">
-          <div className="column">
-          {articles.map((article, index) => (
-            <ArticleCard key={index} {...article} /> ))}
-          </div>
-          <div className="column2">
-          <SignupWidget
-              title={"Stay up to date"}
-              content={"Get notified when I publish something new, and unsubscribe at any time."}/>
-          <WorkWidget {...workData}/>
-          <SkillsWidget {...skillsData}/>
-          </div>
-        </div>
-        </main>
-            <Footer links={links} />
+      <ProjectCard {...cardData} />
+              <div>
+                {articles.map((article, index) => (
+                  <ArticleCard key={index} {...article} /> ))}
+                  <SignupWidget
+                    title={"Join my newsletter"}
+                    content={"Subscribe to my newsletter for updates."}/>
+                  <WorkWidget {...workData}/>
+                  <SignupWidget
+                    title={"Join my newsletter"}
+                    content={"Subscribe to my newsletter for updates."}/>
+                  <SkillsWidget {...skillsData}/>
+                  <Footer links={links} />
+              </div>
     </div>
   );
 }
