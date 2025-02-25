@@ -34,7 +34,7 @@ export const links = [
 ];
 
 const descriptionData = {
-  title: "I am Isabel. I like to accept challenges, so that I may feel the satisfaction of compiting with myself.",
+  title: "I am Isabel. I like to accept challenges, so that I may feel the satisfaction of increasing my knowledge.",
   experiences: [
 
       "I have worked for about ten years in different companies for financial services projects for the biggest banks in Brazil, managing sensitive data for validation, and it has been delivered successfully because of detailed validation and comparison according to the business requirements."
