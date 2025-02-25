@@ -60,17 +60,17 @@ return (
           </div>
           <div>
             <img  src="/Isabel_portfolio.jpg" alt="Portfolio Picture" className="portfolio-picture" />
-            <li key={0}>
+            <li key={0} className="description-section">
               <a href={link[0]} target="_blank" rel="noreferrer" >
                 <img src="/linkedin.png" alt="iconsmind" className="image-Icon"/>{'Follow me on LinkedIn'}
               </a>
             </li>
-            <li key={1}>
+            <li key={1} className="description-section">
               <a href={link[1]} target="_blank" rel="noreferrer" >
               <img src="/social.png" alt="iconsmind" className="image-Icon"/>{'Follow me on GitHub'}
               </a>
             </li>
-            <li key={2}>
+            <li key={2} className="description-section">
               <a href={link[2]} target="_blank" rel="noreferrer" >
               <img src="/mail-icon.png" alt="iconsmind" className="image-Icon"/>{'risalli@hotmail.com'}
               </a>
