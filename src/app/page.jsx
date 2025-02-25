@@ -18,10 +18,10 @@ const options = [
   { path: "/uses", label: "Uses" },
 ];
 const cardData = {
-  name: "Isabel, software engineer",
+  name: "Isabel, software engineer, learner and world traveler",
   logo: "/Isabel_portfolio.jpg",
   content:
-    "Working with the Product Team to discover strong solutions for a digital product to support hourly-based external recruiting services. Our platform is built on top of firebase technologies, including Firestore, Cloud Functions (NodeJS + Typescript), Sveltekit, and Typesense.",
+    "Many years of experience in the software area as a Quality assurance engineer. I have been working with different technologies and programming languages. I am currently working as a data analyst at Ensign College.",
   link: ["https://www.linkedin.com/in/isabel-cordova-noriega", "https://www.ensign.edu/" , "https://github.com/"],
 };
 const articles = [
@@ -42,42 +42,42 @@ const articles = [
 ];
 const workData = {
   title: "Work",
-  content: "My work experience.",
+  content: "My work experience in Technology area has been with automation tools, software development, and data analysis.",
   experiences: [
     {
       logo: "/Ensign_College.png",
       organization: "Ensign College",
-      jobTitle: "Software Engineer",
-      startYear: 2016,
+      jobTitle: "  Data Analyst          ",
+      startYear: 2024,
       endYear: null,
     },
     {
       logo: "/itau.png",
       organization: "Itau Unibanco",
-      jobTitle: "Software Engineer",
-      startYear: 2014,
-      endYear: 2015,
+      jobTitle: "Quality Assurance Engineer",
+      startYear: 2021,
+      endYear: 2023,
     },
     {
       logo: "/pagbank.png",
       organization: "PagBank",
-      jobTitle: "Software Engineer",
-      startYear: 2012,
-      endYear: 2013,
+      jobTitle: "Quality Assurance Engineer",
+      startYear: 2018,
+      endYear: 2021,
     },
 
   ],
 };
-const skillsData = {title:'Skills', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.',
+const skillsData = {title:'Skills', content:'My skills in software development are mostly:',
   skills: [
-  { name: 'HTML', proficiency: 60, icon: 'html.png' },
+  { name: 'HTML', proficiency: 40, icon: 'html.png' },
   { name: 'CSS', proficiency: 50, icon: 'css-icon.png' },
-  { name: 'JavaScript', proficiency: 75, icon: 'icons8-javascript-48.png' },
+  { name: 'JavaScript', proficiency: 80, icon: 'icons8-javascript-48.png' },
 ]} ;
 export const links = [
   {
     title: 'Home',
-    url: '/home',
+    url: '/',
   },
   {
     title: 'About',

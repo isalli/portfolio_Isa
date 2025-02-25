@@ -28,6 +28,10 @@ body.dark {
   float: left;
   width: 30%;
 }
+.column4 {
+  float: left;
+  width: 30%;
+}
 
 
 /* Clear floats after the columns */
